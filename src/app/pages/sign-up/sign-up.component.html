@@ -1,0 +1,54 @@
+<div class="wrapper">
+    <div class="imagen">
+        <img src="../../../assets/signup.png" alt='placeholder'>
+    </div>
+
+
+    <form action="" class="register-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+        <h1>REGISTRO</h1>
+        <mat-form-field appearance="fill">
+            <mat-label>Nombre</mat-label>
+            <input name="name" formControlName="name" (ngModel)="user.name" matInput placeholder="" value="" required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Apellido</mat-label>
+            <input name="lastName" formControlName="lastName" (ngModel)="user.lastName" matInput placeholder="" value=""
+                required>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Email</mat-label>
+            <input name="email" formControlName="email" (ngModel)="user.email" matInput placeholder="" value=""
+                required>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Contraseña</mat-label>
+            <input name="password" formControlName="password" (ngModel)="user.password" matInput placeholder="" value=""
+                required>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Direccion</mat-label>
+            <input name="address" formControlName="address" (ngModel)="user.address" matInput placeholder="" value=""
+                required>
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Telefono</mat-label>
+            <input name="cellPhone" formControlName="cellPhone" matInput placeholder="" value=""
+                (ngModel)="user.cellPhone" required>
+        </mat-form-field>
+
+        <mat-card-footer>
+            <fieldset id='fieldSubmit' class="register-btns">
+                <button (click)="onSubmit()" type="submit" [disabled]="!registerForm.valid" mat-raised-button
+                    color="primary">Registar</button>
+                <button mat-raised-button color="primary">Ya tengo cuenta</button>
+            </fieldset>
+        </mat-card-footer>
+
+    </form>
+
+</div>
