@@ -2,20 +2,14 @@
     <div class="imagen">
         <img src="../../../assets/signup.png" alt='placeholder'>
     </div>
-
-
     <form action="" class="register-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
         <h1>REGISTRO</h1>
         <mat-form-field appearance="fill">
-            <mat-label>Nombre</mat-label>
-            <input name="name" formControlName="name" (ngModel)="user.name" matInput placeholder="" value="" required>
-        </mat-form-field>
-
-        <mat-form-field appearance="fill">
-            <mat-label>Apellido</mat-label>
-            <input name="lastName" formControlName="lastName" (ngModel)="user.lastName" matInput placeholder="" value=""
+            <mat-label>Nombre y apellido</mat-label>
+            <input name="fullName" formControlName="fullName" (ngModel)="user.fullName" matInput placeholder="" value=""
                 required>
         </mat-form-field>
+
 
         <mat-form-field appearance="fill">
             <mat-label>Email</mat-label>

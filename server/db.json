@@ -461,6 +461,32 @@
         "name": "Cadete",
         "isDeleted": 0
       }
+    },
+    {
+      "email": "fcsaldivia@gmail.com",
+      "password": "123",
+      "fullName": "Facundo Saldivia",
+      "address": "micasaxd 123",
+      "cellPhone": "343414435",
+      "id": 27
     }
-  ]
+  ],
+  "Roles": [
+    {
+      "id": 1,
+      "name": "Administrador",
+      "isDeleted": 0
+    },
+    {
+      "id": 2,
+      "name": "Cadete",
+      "isDeleted": 0
+    },
+    {
+      "id": 3,
+      "name": "Usuario final",
+      "isDeleted": 0
+    }
+  ],
+  "Alta": []
 }

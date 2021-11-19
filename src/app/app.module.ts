@@ -10,6 +10,10 @@ import { PagesModule } from './pages/pages.module';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIcon, MatIconModule } from '@angular/material/icon';
+import { HttpClientModule } from '@angular/common/http';
+import { SignUpService } from './pages/services/sign-up.service';
+import { HomeService } from './pages/services/home.service';
 
 @NgModule({
   // Componentes que voy a utlizar
@@ -22,9 +26,11 @@ import { MatButtonModule } from '@angular/material/button';
     PagesModule,
     MatToolbarModule,
     MatButtonModule,
+    MatIconModule,
+    HttpClientModule,
   ],
   // Servicios especificos de un modulo
-  providers: [],
+  providers: [SignUpService, HomeService],
   // Que componente quiero lanzar primero ?
   bootstrap: [AppComponent],
 })

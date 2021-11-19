@@ -11,8 +11,7 @@ export class SignUpComponent implements OnInit {
   user = {
     email: '',
     password: '',
-    name: '',
-    lastName: '',
+    fullName: '',
     address: '',
     cellPhone: '',
   };
@@ -21,8 +20,7 @@ export class SignUpComponent implements OnInit {
   ngOnInit(): void {}
 
   registerForm = new FormGroup({
-    name: new FormControl(''),
-    lastName: new FormControl(''),
+    fullName: new FormControl(''),
     email: new FormControl(''),
     password: new FormControl(''),
     address: new FormControl(''),
@@ -30,6 +28,6 @@ export class SignUpComponent implements OnInit {
   });
 
   onSubmit(): void {
-    console.log('se envio');
+    console.log(this.user);
   }
 }
