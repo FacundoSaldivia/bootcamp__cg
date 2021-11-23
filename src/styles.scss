@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import "colors";
+body {
+  position: relative;
+  width: 100%;
+  display: block;
+  background-color: $bg-color;
+}
+
+@font-face {
+  src: url(assets/fonts/adm.otf);
+  font-family: serat;
+}

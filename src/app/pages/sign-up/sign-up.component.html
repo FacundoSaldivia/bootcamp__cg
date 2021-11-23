@@ -1,6 +1,11 @@
 <div class="wrapper">
-    <div class="imagen">
-        <img src="../../../assets/signup.png" alt='placeholder'>
+    <div class="signup-text">
+        <h1>Registrate, es completamente <span class="higlight">gratis !</span> </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem aut obcaecati eaque, aliquid deleniti quos nisi
+            fuga quidem odio et vel inventore ipsa eligendi quasi quisquam iusto optio accusantium, corporis officiis ea
+            culpa illum. Tenetur ullam ab accusamus commodi tempore aliquam aliquid, molestiae tempora asperiores. Cum
+            dolorem illum doloribus beatae optio iusto, est voluptatibus facere itaque molestiae doloremque error nemo!
+        </p>
     </div>
     <form action="" class="register-form" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
         <h1>REGISTRO</h1>
@@ -37,9 +42,8 @@
 
         <mat-card-footer>
             <fieldset id='fieldSubmit' class="register-btns">
-                <button (click)="onSubmit()" type="submit" [disabled]="!registerForm.valid" mat-raised-button
-                    color="primary">Registar</button>
-                <button mat-raised-button color="primary">Ya tengo cuenta</button>
+                <button type="submit" [disabled]="!registerForm.valid" mat-raised-button>Registar</button>
+                <button mat-raised-button>Ya tengo cuenta</button>
             </fieldset>
         </mat-card-footer>
 

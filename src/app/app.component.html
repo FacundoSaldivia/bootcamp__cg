@@ -1,12 +1,8 @@
 <mat-toolbar class="toolbar">
-    <span style="font-size:27px">TODO IT</span>
+    <button [routerLink]="['/home']" (click)="home = true" class=title-home>TODO IT</button>
     <span class="example-spacer"></span>
-    <button mat-icon-button color="warm" [style.visibility]="home? 'hidden': 'visible'" [routerLink]="['/home']"
-        (click)="home = true">
-        <mat-icon>home</mat-icon>
-    </button>
-    <button mat-stroked-button color="accent" [routerLink]="['/register']"
-        [style.visibility]="home? 'visible': 'hidden'" (click)="home = false">Register</button>
+    <button mat-stroked-button class="btn-register" [routerLink]="['/register']"
+        [style.visibility]="home? 'visible': 'hidden'" (click)="home = false">Sign Up</button>
 </mat-toolbar>
 <router-outlet></router-outlet>
 <footer id="footer" class=''>

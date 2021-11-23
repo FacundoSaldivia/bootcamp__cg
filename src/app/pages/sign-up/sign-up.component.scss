@@ -1,26 +1,36 @@
+@import "../../../colors";
 .register-form {
   h1 {
-    color: #cfcece;
+    color: $white-ish;
+    margin: 1em 0em;
+    font-family: serat;
   }
   padding-top: 1rem;
-  min-width: 200px;
   max-width: 400px;
-  width: 100%;
-  min-height: 500px;
   text-align: center;
   background: #252525;
   border-radius: 4%;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(73, 73, 73, 0.2),
+    0 6px 20px 0 rgba(82, 82, 82, 0.19);
+
   .register-btns {
     border: 0px solid #313131;
     button {
+      color: $black-ish;
       margin: 1rem;
       width: 50%;
+      background: $accent;
+    }
+    button:disabled {
+      opacity: 0.3;
     }
   }
 }
 
 .wrapper {
+  .imagen {
+    filter: invert(90%);
+  }
   margin-top: 5rem;
   columns: 2;
   column-gap: 10rem;
@@ -29,11 +39,21 @@
   justify-content: center;
 }
 
+.signup-text {
+  color: $white-ish;
+  max-width: 500px;
+  h1,
+  p {
+    font-family: serat;
+    line-height: 200%;
+  }
+}
+.higlight {
+  color: $accent;
+}
 @media screen and (max-width: 1024px) {
-  .imagen {
-    img {
-      display: none;
-    }
+  .signup-text {
+    display: none;
   }
   .wrapper {
     columns: 1;

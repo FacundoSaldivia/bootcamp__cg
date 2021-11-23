@@ -469,6 +469,82 @@
       "address": "micasaxd 123",
       "cellPhone": "343414435",
       "id": 27
+    },
+    {
+      "fullName": "Facundo Saldivia 2",
+      "email": "facundos04@hotmail.com",
+      "password": "asd",
+      "address": "asd",
+      "cellPhone": "3434",
+      "id": 28
+    },
+    {
+      "fullName": "Facundo Saldivia 2",
+      "email": "facundos04@hotmail.com",
+      "password": "asd",
+      "address": "asd",
+      "cellPhone": "3434",
+      "id": 29
+    },
+    {
+      "fullName": "asd",
+      "email": "asd",
+      "password": "asd",
+      "address": "asd",
+      "cellPhone": "asd",
+      "id": 30
+    },
+    {
+      "fullName": "asd",
+      "email": "asd",
+      "password": "asd",
+      "address": "asd",
+      "cellPhone": "asd",
+      "id": 31
+    },
+    {
+      "fullName": "asd",
+      "email": "asd",
+      "password": "asd",
+      "address": "asd",
+      "cellPhone": "asd",
+      "id": 32
+    },
+    {
+      "fullName": "asd",
+      "email": "asd",
+      "password": "asd",
+      "address": "asd",
+      "cellPhone": "asd",
+      "id": 33
+    },
+    {
+      "fullName": "asd",
+      "email": "asd",
+      "password": "asd",
+      "address": "asd",
+      "cellPhone": "asd",
+      "id": 34
+    },
+    {
+      "fullName": "asd",
+      "email": "asd",
+      "password": "asd",
+      "address": "asd",
+      "cellPhone": "asd",
+      "id": 35
+    },
+    {
+      "fullName": "asd",
+      "email": "asd",
+      "password": "asd",
+      "address": "asd",
+      "cellPhone": "asd",
+      "vehicle": "",
+      "rol": {
+        "name": "Administrador"
+      },
+      "id": 36
     }
   ],
   "Roles": [

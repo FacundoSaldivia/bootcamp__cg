@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
 import { FormGroup, FormControl, Validators } from '@angular/forms';
+import { SignUpService } from '../services/sign-up.service';
+import { Rol } from 'src/app/models/rol';
 
 @Component({
   selector: 'app-sign-up',
@@ -8,16 +10,25 @@ import { FormGroup, FormControl, Validators } from '@angular/forms';
   styleUrls: ['./sign-up.component.scss'],
 })
 export class SignUpComponent implements OnInit {
+  administrador: Rol = {
+    name: 'Administrador',
+  };
+
   user = {
     email: '',
-    password: '',
     fullName: '',
     address: '',
     cellPhone: '',
+    observations: '',
+    password: '',
+    vehicle: '',
+    rol: this.administrador,
   };
-  constructor() {}
+  constructor(private signUpService: SignUpService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getAllClients();
+  }
 
   registerForm = new FormGroup({
     fullName: new FormControl(''),
@@ -25,9 +36,21 @@ export class SignUpComponent implements OnInit {
     password: new FormControl(''),
     address: new FormControl(''),
     cellPhone: new FormControl(''),
+    vehicle: new FormControl(''),
+    rol: new FormControl(this.administrador),
   });
 
   onSubmit(): void {
-    console.log(this.user);
+    this.signUp();
+  }
+  signUp() {
+    this.signUpService.save(this.registerForm.value).subscribe((resp: any) => {
+      console.log(resp);
+    });
+  }
+  getAllClients() {
+    this.signUpService.getAll().subscribe((resp) => {
+      console.log(resp);
+    });
   }
 }
